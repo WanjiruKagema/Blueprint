@@ -1,0 +1,260 @@
+header img {
+    height: 60px;
+    margin-left: 40px;
+}
+
+body {
+    height: 125vh;
+    background-size: cover;
+    font-family: sans-serif;
+    margin-top: 80px;
+    padding: 30px;
+    background-image: url('Images/background1.png') ;
+    
+    
+}
+
+.background-filter::after {
+backdrop-filter: blur(5px); /* Supported in Chrome 76 */
+
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%; height: 100%;
+}
+
+.background-filter {
+  position: relative;
+}
+
+    
+main {
+    color: white;
+    text-align: center;
+}
+
+.topnav{
+    position: relative;
+    overflow: hidden;
+
+}
+header {
+    background-color:white;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+header * {
+    display: inline;
+
+}
+
+header li {
+    margin: 30px;
+}
+
+header li a {
+    color: black;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.list{
+    
+            position: fixed;  
+            top: 20%; 
+            left: 50%; 
+            margin-top: -100px; 
+            margin-left: -200px;
+
+}
+
+.topnav-right {
+    float: left;
+    overflow: hidden;
+    border: none;
+  
+  
+  }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    align-items: center;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border: none;
+    display: none;
+  }
+  
+  .openbtn:hover {
+    background-color: black;
+  }
+  
+  #main {
+    
+    padding: 30px;
+    margin-right: 3px
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+  
+  .shopping{
+      float: left;
+      
+
+  }
+
+  .content{
+      text-align: center;
+      font-family: 'sans-serif';
+      font-style: oblique;
+      
+      
+  }
+
+  .content1{
+      text-align: center;
+      font-family: serif;
+      font-style: italic;
+      
+  }
+
+  .content2{
+      text-align: center;
+      font-family: 'Lucida Sans Unicode';
+      font-style: oblique;
+      
+
+  }
+
+  .content3{
+      text-align: left;
+     border-radius: 5px;
+  }
+
+  .thebutton .btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .thebutton .btn:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+  
+.box{
+    background-color: clear;
+    height: 100px;
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-top: 100px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color:rgb(233, 229, 222);
+    color:black;
+    text-align: center;
+ }
+
+ @media screen and (max-width: 992px) {
+    div.list {
+      display: none;
+    }
+    .openbtn{
+        
+        display: inline;
+        
+    }
+     .topright{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 80p;
+    }
+  }
+
+  
+  
